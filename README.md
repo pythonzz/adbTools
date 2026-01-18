@@ -25,7 +25,7 @@ AdbTools 是一个基于 Kotlin 开发的高性能 Android 调试桥（ADB）的
 
 | **1** | **2** |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/015656fc-9eae-47ad-a4ad-7c8d875618f5" width="300"/> | <img src="https://github.com/user-attachments/assets/a2ec0497-c43c-4212-b978-f7529b1c4b7c" width="300"/> |
+| <img src="https://github.com/davikl/adbTools/blob/main/images/微信图片_20260118194208_28_491.jpg" width="300"/> | <img src="https://github.com/user-attachments/assets/a2ec0497-c43c-4212-b978-f7529b1c4b7c" width="300"/> |
 
 
 | **3** | **4** |
