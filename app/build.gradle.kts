@@ -62,8 +62,9 @@ android {
         }
     }
     lint {
-                 disable "CoroutineCreationDuringComposition"
-             }
+        // 错误写法：disable "CoroutineCreationDuringComposition"
+        disable("CoroutineCreationDuringComposition")  // Kotlin DSL 正确写法
+    }
 }
 
 dependencies {
