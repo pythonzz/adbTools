@@ -61,6 +61,9 @@ android {
             // pickFirst("META-INF/LICENSE")
         }
     }
+    lint {
+                 disable "CoroutineCreationDuringComposition"
+             }
 }
 
 dependencies {
