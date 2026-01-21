@@ -46,24 +46,25 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
     packaging {
         resources {
             // 遇到这个冲突文件时，只取第一个找到的，忽略后面的
-            pickFirst("META-INF/versions/9/OSGI-INF/MANIFEST.MF")
+            //pickFirst("META-INF/versions/9/OSGI-INF/MANIFEST.MF")
 
             // 如果还有其他类似的 LICENSE 文件冲突，也可以在这里添加
             // pickFirst("META-INF/LICENSE")
+            pickFirsts.add("META-INF/versions/9/OSGI-INF/MANIFEST.MF")
         }
     }
     lint {
         // 错误写法：disable "CoroutineCreationDuringComposition"
-        disable("CoroutineCreationDuringComposition")  // Kotlin DSL 正确写法
+        disable.add("CoroutineCreationDuringComposition")
     }
 }
 
